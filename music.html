@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title> Ananya Tadigadapa </title>
+    <link rel="shortcut icon" type="image/jpg" href="images/small-profile.jpeg"/>
+    <style>
+        #page-container {
+        position: relative;
+        min-height: 100vh;
+        }
+
+        #content-wrap {
+        padding-bottom: 50px;    /* Footer height */
+        }
+
+        /* menu of links */
+        .menu {
+        height: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        overflow: hidden;
+        background-color: #e8dab2;
+        }
+
+        .menu a {
+        text-align:center;
+        color: black;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        float: left;
+        }
+
+        .menu a:hover {
+        background-color: #eaeaea;
+        color: #4f6d7a;
+        }
+
+        .menu a.active {
+        background-color: #eaeaea;
+        color: #4f6d7a;
+        }
+
+        .dropdown {
+        float: left;
+        overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #eaeaea;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #eaeaea;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        .dropdown-content a:hover {
+        background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .body {
+        padding-left: 50px;
+        padding-right: 50px;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .body h2 {
+        color: #4f6d7a
+        }
+
+        .body ul {
+        list-style-type:square;
+        }
+
+        .body a {
+        color: black;
+        text-decoration: none;
+        }
+
+        .body a:hover {
+        background-color: #eaeaea;
+        color: #4f6d7a;
+        }
+
+        table {
+        float:right;
+        table-layout: fixed;
+        }
+
+        td {
+        padding: 10px;
+        padding-bottom: 0;
+        }
+
+        #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color:#eaeaea;
+        height: 50px;            /* Footer height */
+        }
+    </style>
+  </head>
+
+  <body style="margin:0;">
+    <div id="page-container">
+    <div id="content-wrap">
+    <!--Header-->
+    <div class="menu">
+      <a href="index.html#home">Home</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="music.html">Music</a>
+      <div class="dropdown">
+          <button class="dropbtn">Gallery</button>
+          <div class="dropdown-content">
+              <a href="gallery.html">Gallery</a>
+            <a href="gallery.html#baking">Baking</a>
+          </div>
+      </div>
+      <a target="_blank" href="resume.pdf">Resume</a>
+    </div>
+    
+    <div class="body">
+      <div style="padding:30px; width:100%">
+        <h2>About Me</h2>
+        <ul>
+          <li>Studying flute since 2013</li>
+          <li>Studied piano from 2006 to 2019</li>
+          <li>Interested in music theory and composition</li>
+        </ul>
+        <h2>Ensembles</h2>
+        <ul>
+          <li>Flutist in the Northeastern Symphony Orchestra, 2021 - Present</li>
+          <li>Wind Quintet, Spring 2022</li>
+          <li>Flutist in the Northeastern Wind Ensemble, Fall, 2021</li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCHTldQY7xMKxfVio6cnKpUg">AMAN Duo</a> 
+            - cello and flute sibling duo, Fall 2020 - Present</li>
+        </ul>
+        <h2>Composition</h2>
+        <ul>
+          <li>Composed a seven movement trio for 2 violins and cello for the 
+            Performing Arts School of Central Pennsylvania performance Ballet in Bloom, in May 2021.</li>
+        </ul>
+        <h2>More Music </h2>
+        <ul>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCJx6zmmcY4vQEY4vXpaHA8A">YouTube channel</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCHTldQY7xMKxfVio6cnKpUg">AMAN duo channel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Performances</h2>
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/xhX7g25iKIM" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/xGWqQFS2lJU" title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    </div>
+    
+    <!--Footer-->
+    <div id="footer">
+      <table>
+        <tr>
+          <td><a target="_blank" href="https://www.linkedin.com/in/ananya-tadigadapa">
+              <img src="images/linkedin.png" style="height:30px" alt="LinkedIn"></a></td>
+          <td><a target="_blank" href="mailto:tadigadapa.a@northeastern.edu">
+            <img src="images/outlook.png" style="height:30px" alt="Outlook"></a></td>
+          <td><a target="_blank" href="https://github.com/AnanyaT129">
+            <img src="images/github.png" style="height:30px" alt="GitHub"></a></td>
+          <td><a target="_blank" href="https://www.youtube.com/channel/UCJx6zmmcY4vQEY4vXpaHA8A">
+            <img src="images/youtube.png" style="height:30px" alt="YouTube"></a></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </body>
+</html>
