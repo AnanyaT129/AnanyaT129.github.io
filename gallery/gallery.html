@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title> Ananya Tadigadapa </title>
+    <!-- <link rel="shortcut icon" type="image/jpg" href="images/profile.jpg"/> -->
+    <link rel="stylesheet" href="style.css">
+</head>  <div id="page-container">
+  <!--Header-->
+  <header>
+      <div id="left">
+          <div class="dropdown">
+              <button class="dropbtn">Info ⭣</button>
+              <div class="dropdown-content">
+                  <a href="../index.html">About</a>
+                  <a href="../projects/projects.html">Projects & Publications</a>
+                  <a target="_blank" href="../resume.pdf">Resume</a>
+              </div>
+          </div>
+      </div>
+      <div id="right">
+          <div class="dropdown">
+              <button class="dropbtn">Just for Fun ⭣</button>
+              <div class="dropdown-content">
+                  <a href="../music/music.html">Music</a>
+                  <a href="../gallery/gallery.html">Baking</a>
+              </div>
+          </div>
+      </div>
+      <div id="center">
+          <h1 id="home">Ananya Tadigadapa </h1>
+      </div>
+  </header>
+
+  <div id="content-wrap">
+      <!--Second section-->
+    <div class="body">
+      I love cooking and baking (and then filling my camera roll with pictures of what I made!). My favorite part is sharing my creations with others, whether it be macarons for a friend's birthday, or a late night cookies to share with my roommate. Scroll through the gallery below to see some of the baked goods I am the most proud of. 
+    </div>
+      <!-- Container for the image gallery -->
+    <div class="container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="../images/croissant.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="../images/biscotti.jpg" style="width:100%">
+    </div>
+        
+    <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="../images/macaron.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="../images/crepes.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="../images/robot_cookies.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="../images/bread.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="../images/ube.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="../images/peach_pie.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="../images/apple_pie.jpg" style="width:100%">
+  ` </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="../images/croissant.jpg" style="width:100%" onclick="currentSlide(1)" alt="January, 2021 - Croissants">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/biscotti.jpg" style="width:100%" onclick="currentSlide(2)" alt="January, 2022 - Anise Biscotti">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/macaron.jpg" style="width:100%" onclick="currentSlide(3)" alt="February, 2022 - Nutella Macaron">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/crepes.jpg" style="width:100%" onclick="currentSlide(4)" alt="May, 2020 - Crepes with Cherries">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/robot_cookies.jpg" style="width:100%" onclick="currentSlide(5)" alt="December, 2022 - Robot Cookies">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/bread.jpg" style="width:100%" onclick="currentSlide(6)" alt="January, 2023 - Bread">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/ube.jpg" style="width:100%" onclick="currentSlide(7)" alt="January, 2023 - Ube Crinkle Cookies">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/peach_pie.jpg" style="width:100%" onclick="currentSlide(8)" alt="September, 2022 - Peach pie">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/apple_pie.jpg" style="width:100%" onclick="currentSlide(9)" alt="September, 2021 - Apple pie">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+
+  <!--Footer-->
+  <div id="footer">
+      <table>
+          <tr>
+          <td><a target="_blank" href="https://www.linkedin.com/in/ananya-tadigadapa">
+              <img src="../images/linkedin.png" style="height:30px" alt="LinkedIn"></a></td>
+          <td><a target="_blank" href="mailto:tadigadapa.a@northeastern.edu">
+              <img src="../images/outlook.png" style="height:30px" alt="Outlook"></a></td>
+          <td><a target="_blank" href="https://github.com/AnanyaT129">
+              <img src="../images/github.png" style="height:30px" alt="GitHub"></a></td>
+          <td><a target="_blank" href="https://www.youtube.com/channel/UCJx6zmmcY4vQEY4vXpaHA8A">
+              <img src="../images/youtube.png" style="height:30px" alt="YouTube"></a></td>
+          </tr>
+      </table>
+  </div>
+</div>
+<body style="margin:0;">
+
+</body>
+</html>
