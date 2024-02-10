@@ -62,7 +62,6 @@ a.active {
 table {
     float:right;
     table-layout: fixed;
-    text-align: left;
 }
 
 td {
@@ -259,7 +258,6 @@ opacity: 1;
 .projectInfo {
   display: flex;
   /* align-items: center; */
-  text-align: left;
   justify-content: center;
   padding-bottom: 2%;
   border-bottom: 2px grey solid;

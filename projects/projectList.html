@@ -6,6 +6,7 @@
     <title> Ananya Tadigadapa </title>
     <!-- <link rel="shortcut icon" type="image/jpg" href="../images/profile.jpg"/> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -16,18 +17,19 @@
                 <div class="dropdown">
                     <button class="dropbtn">Info ⭣</button>
                     <div class="dropdown-content">
-                        <a href="../index.html">About</a>
+                        <a href="../work_experience/workExperience.html">Work Experience</a>
                         <a href="../projects/projects.html">Projects & Publications</a>
-                        <a target="_blank" href="../resume.pdf">Resume</a>
+                        <a href="../leadership/leadership.html">Leadership</a>
                     </div>
                 </div>
+                <a href="../index.html#home"><button class="btn"><i class="fa fa-home"></i></button></a>
             </div>
             <div id="right">
                 <div class="dropdown">
                     <button class="dropbtn">Just for Fun ⭣</button>
                     <div class="dropdown-content">
                         <a href="../music/music.html">Music</a>
-                        <a href="../gallery/gallery.html">Baking</a>
+                        <a href="../gallery/gallery.html">Low-Waste Baking</a>
                     </div>
                 </div>
             </div>
@@ -44,6 +46,7 @@
                     <h2>Table of Contents</h2>
                     <table>
                         <tr>
+                            <td><a href="#bulletjournal">Bullet Journal App</a></td>
                             <td><a href="#myowearable">Myowearable</a></td>
                             <td><a href="#scrabble">Scrabble</a></td>
                             <td><a href="#foodwaste">Food Waste Reducer</a></td>
@@ -51,6 +54,29 @@
                             <td><a href="#website">This Website</a></td>
                         </tr>
                     </table>
+                </div>
+            </div>
+            <div class="body">
+                <div class="projectInfo" id="bulletjournal">
+                    <div class="image">
+                        <h1>Bullet Journal App</h1>
+                        <img src="../images/oodFinal.png">
+                        <p> <a target="_blank" href="https://github.com/AnanyaT129/OOD-final-project">Source Code</a> | Java, JUnit, JavaFX</p>
+                    </div>
+                    <div class="text">
+                        <table>
+                            <tr>
+                                <td><h2>Desktop application for an editable bullet journal</h2></td>
+                                <td><p class="special">Object Oriented Design Project</p></td>
+                            </tr>
+                        </table>
+                        <p class="authors">Ananya Tadigadapa, Stephanie Chen, and Allison Ryan</p>
+                        <p>This bullet journal program allows you to add weekly events and tasks, view them in a mini viewer, see statistics about your week, and even set a password.
+                            You can pick a template for a bullet journal to get started, then easily use a menubar to navigate adding tasks and events to your week. 
+                            You can customize your week by setting limits on tasks and events, and choosing the week start day. Furthermore, you can save your bullet journal to a file, and view a convenient task queue of all tasks left to be complete.
+                        </p>
+                        <a href="./projects.html">Back to projects</a>
+                    </div>
                 </div>
             </div>
             <div class="body">
@@ -71,29 +97,6 @@
                         <p>Many athletes face recurring injury through unknowingly overstraining their muscles. To help prevent this, a compression sleeve-mounted medical device called the Myowearable was developed, which can be used without professional supervision. The Myowearable monitors the amount of electrical stimulation in the adjacent muscle through three electrodes of a surface electromyography (sEMG) sensor touching the skin. The collected data is sent to an Arduino component providing real-time audio feedback. Real-time visual feedback and data analyses, including injury prediction warnings and graphs, can be viewed in the user interface of the accompanying software on a computer paired via Bluetooth.
                         </p>
                         <p>Presented at <a target="_blank" href="https://undergraduate.northeastern.edu/research/rise-2023/Overview/">RISE in April 2022</a>, and the <a target="_blank" href="https://www.asee.org/events/Conferences-and-Meetings/2022-Annual-Conference-Highlights">ASEE 2022 National Convention</a></p>
-                        <a href="./projects.html">Back to projects</a>
-                    </div>
-                </div>
-            </div>
-            <div class="body">
-                <div class="projectInfo" id="scrabble">
-                    <div class="image">
-                        <h1>Scrabble</h1>
-                        <img src="../images/scrabble.jpg">
-                        <p> <a target="_blank" href="https://github.com/AnanyaT129/2140-Final-Project">Source Code</a> | Python: TKinter GUI </p>
-                    </div>
-                    <div class="text">
-                        <table>
-                            <tr>
-                                <td><h2>A 2 person interactive game of Scrabble</h2></td>
-                                <td><p class="special">Computing Fundamentals Final Project</p></td>
-                            </tr>
-                        </table>
-                        <p>Prof. Roi Yehoshua, Ananya Tadigadapa and Ben Yoon</p>
-                        <p>Scrabble is a board game in which players randomly pick 7 letters from a bag of 100 as their "hand." In turns, they place new words on a 15x15 board by utilizing the existing letters. They gain points depending on which letters they used and which spots on the board their letters covered. Using an object oriented design, the code was split into two main sections: first, several classes that make up the backbone of the game functions were designed and tested. Next, a Graphical User Interface (GUI) was developed to integrate those functions with user inputs. 
-                            The backend can also run independently in the terminal, if desired. It displays a board with Triple Letter Score and Double Letter Score squares, similar to a traditional scrabble board, automatically updates players’ hands after every turn, displayed at the top of the GUI, and includes a section for a player to enter a word, then click to place it on an interactive board. Skips and forfeits, valid word checks to only allow legal plays, and a real-time scoring system was also added. Overall, a game of Scrabble played as closely as possible to the traditional board game, with enhanced features wherever possible, was developed. 
-                            
-                        </p>
                         <a href="./projects.html">Back to projects</a>
                     </div>
                 </div>
@@ -124,30 +127,6 @@
                 </div>
             </div>
             <div class="body">
-                <div class="projectInfo" id="helloworld">
-                    <div class="image">
-                        <h1>Hello World</h1>
-                        <img src="../images/helloworld.jpg">
-                        <p> <a target="_blank" href="https://github.com/AnanyaT129/helloworld-hackbeanpot2023">Source Code</a> | <a target="_blank" href="https://ananyat129.github.io/helloworld-hackbeanpot2023/">Application</a> | React, Git Pages</p>
-                    </div>
-                    <div class="text">
-                        <table>
-                            <tr>
-                                <td><h2>A Peer-to-peer Networking Web Application</h2></td>
-                                <td><p class="special">Created During HackBeanPot 2023</p></td>
-                            </tr>
-                        </table>
-                        <p>Katherine Aristizabal, Jenna Sigman, Ananya Tadigadapa, and Roland Waterson</p>
-                        <p>Hello World is a networking web application that aims to connect students to each other. Finding other students to study with in large lecture sections or asking for help on homework can be really intimidating. Therefore, an application aimed at reducing the social barrier and connecting students with matching goals could help this problem.
-                        The app works by having users create a profile including classes, places they have worked, and what they are looking for. Then, it will show them other students that are looking for similar things, and they can choose to match or pass with them by clicking right or left respectively. If two students match with each other, then they will be
-                        able to chat each other and make plans to meet up. The application has limited functionality due to being created in only 48 hours, so the backend has not been developed. Since all four of us were new to web app
-                        development, we learned React during the event and focused on the front end. However, with more time, we would have added more features such as the match algorithm and a resources board. 
-                        </p>
-                        <a href="./projects.html">Back to projects</a>
-                    </div>
-                </div>
-            </div>
-            <div class="body">
                 <div class="projectInfo" id="website">
                     <div class="image">
                         <h1>This Website</h1>
@@ -171,12 +150,60 @@
                     </div>
                 </div>
             </div>
+            <div class="body">
+                <div class="projectInfo" id="scrabble">
+                    <div class="image">
+                        <h1>Scrabble</h1>
+                        <img src="../images/scrabble.jpg">
+                        <p> <a target="_blank" href="https://github.com/AnanyaT129/2140-Final-Project">Source Code</a> | Python: TKinter GUI </p>
+                    </div>
+                    <div class="text">
+                        <table>
+                            <tr>
+                                <td><h2>A 2 person interactive game of Scrabble</h2></td>
+                                <td><p class="special">Computing Fundamentals Final Project</p></td>
+                            </tr>
+                        </table>
+                        <p>Prof. Roi Yehoshua, Ananya Tadigadapa and Ben Yoon</p>
+                        <p>Scrabble is a board game in which players randomly pick 7 letters from a bag of 100 as their "hand." In turns, they place new words on a 15x15 board by utilizing the existing letters. They gain points depending on which letters they used and which spots on the board their letters covered. Using an object oriented design, the code was split into two main sections: first, several classes that make up the backbone of the game functions were designed and tested. Next, a Graphical User Interface (GUI) was developed to integrate those functions with user inputs. 
+                            The backend can also run independently in the terminal, if desired. It displays a board with Triple Letter Score and Double Letter Score squares, similar to a traditional scrabble board, automatically updates players’ hands after every turn, displayed at the top of the GUI, and includes a section for a player to enter a word, then click to place it on an interactive board. Skips and forfeits, valid word checks to only allow legal plays, and a real-time scoring system was also added. Overall, a game of Scrabble played as closely as possible to the traditional board game, with enhanced features wherever possible, was developed. 
+                            
+                        </p>
+                        <a href="./projects.html">Back to projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="projectInfo" id="helloworld">
+                    <div class="image">
+                        <h1>Hello World</h1>
+                        <img src="../images/helloworld.jpg">
+                        <p> <a target="_blank" href="https://github.com/AnanyaT129/helloworld-hackbeanpot2023">Source Code</a> | <a target="_blank" href="https://ananyat129.github.io/helloworld-hackbeanpot2023/">Application</a> | React, Git Pages</p>
+                    </div>
+                    <div class="text">
+                        <table>
+                            <tr>
+                                <td><h2>A Peer-to-peer Networking Web Application</h2></td>
+                                <td><p class="special">Created During HackBeanPot 2023</p></td>
+                            </tr>
+                        </table>
+                        <p>Katherine Aristizabal, Jenna Sigman, Ananya Tadigadapa, and Roland Waterson</p>
+                        <p>Hello World is a networking web application that aims to connect students to each other. Finding other students to study with in large lecture sections or asking for help on homework can be really intimidating. Therefore, an application aimed at reducing the social barrier and connecting students with matching goals could help this problem.
+                        The app works by having users create a profile including classes, places they have worked, and what they are looking for. Then, it will show them other students that are looking for similar things, and they can choose to match or pass with them by clicking right or left respectively. If two students match with each other, then they will be
+                        able to chat each other and make plans to meet up. The application has limited functionality due to being created in only 48 hours, so the backend has not been developed. Since all four of us were new to web app
+                        development, we learned React during the event and focused on the front end. However, with more time, we would have added more features such as the match algorithm and a resources board. 
+                        </p>
+                        <a href="./projects.html">Back to projects</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--Footer-->
         <div id="footer">
             <table>
                 <tr>
+                <td><a target="_blank" href="../resume.pdf" class="resume">Resume</a></td>
                 <td><a target="_blank" href="https://www.linkedin.com/in/ananya-tadigadapa">
                     <img src="../images/linkedin.png" style="height:30px" alt="LinkedIn"></a></td>
                 <td><a target="_blank" href="mailto:tadigadapa.a@northeastern.edu">

@@ -135,6 +135,20 @@ background-color: #ddd;
 display: block;
 }
 
+/* Style buttons */
+.btn {
+    border: none; /* Remove borders */
+    color: black; /* Black text */
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 30px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: #eaeaea;;
+  }
+
 .home {
     text-align: center;
     width: 65%;
