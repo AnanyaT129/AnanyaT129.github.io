@@ -282,3 +282,18 @@ height: 50px;            /* Footer height */
         width: 33%
     }
   }
+
+  .interestText {
+    border: none; /* Remove borders */
+    color: black; /* Black text */
+    background-color: rgba(255, 255, 255, 0);
+    font-size: inherit; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    font-family: inherit;
+    padding: 6%;
+  }
+  
+  /* Darker background on mouse-over */
+  .interestText:hover {
+    background-color: #eaeaea;;
+  }
